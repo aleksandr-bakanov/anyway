@@ -1,19 +1,17 @@
-package bav.anyway
+package bav.anyway.screens.map
 
 import android.os.Bundle
 import android.preference.PreferenceManager
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import bav.anyway.ui.base.BaseFragment
+import bav.anyway.R
+import bav.anyway.screens.base.BaseFragment
 import kotlinx.android.synthetic.main.fragment_map.*
 import org.osmdroid.config.Configuration
 import org.osmdroid.tileprovider.tilesource.TileSourceFactory
 import org.osmdroid.util.GeoPoint
 import javax.inject.Inject
-
-private const val ARG_PARAM1 = "param1"
-private const val ARG_PARAM2 = "param2"
 
 class MapFragment
 @Inject constructor(): BaseFragment() {

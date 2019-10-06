@@ -1,8 +1,8 @@
 package bav.anyway.di
 
-import bav.anyway.FirstScreenFragment
-import bav.anyway.MainActivity
-import bav.anyway.MapFragment
+import bav.anyway.screens.main.FirstScreenFragment
+import bav.anyway.screens.main.MainActivity
+import bav.anyway.screens.map.MapFragment
 import dagger.Module
 import dagger.android.ContributesAndroidInjector
 

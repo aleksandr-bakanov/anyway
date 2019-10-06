@@ -5,7 +5,7 @@
         android:id="@+id/CostraintLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".FirstScreenFragment">
+        tools:context=".screens.main.FirstScreenFragment">
 
     <EditText
             android:id="@+id/requestTextView"

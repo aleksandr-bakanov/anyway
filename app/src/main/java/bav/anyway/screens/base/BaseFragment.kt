@@ -1,4 +1,4 @@
-package bav.anyway.ui.base
+package bav.anyway.screens.base
 
 import androidx.lifecycle.ViewModelProvider
 import dagger.android.support.DaggerFragment
