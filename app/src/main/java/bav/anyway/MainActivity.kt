@@ -16,9 +16,11 @@ import android.view.View
 import android.widget.Button
 import androidx.navigation.Navigation
 import kotlinx.android.synthetic.main.fragment_first_screen.*
+import javax.inject.Inject
 
 
-class MainActivity : DaggerAppCompatActivity() {
+class MainActivity
+@Inject constructor(): DaggerAppCompatActivity() {
     var navController: NavController? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
