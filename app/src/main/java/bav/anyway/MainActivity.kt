@@ -15,6 +15,7 @@ import android.icu.lang.UCharacter.GraphemeClusterBreak.T
 import android.view.View
 import android.widget.Button
 import androidx.navigation.Navigation
+import androidx.navigation.findNavController
 import kotlinx.android.synthetic.main.fragment_first_screen.*
 import javax.inject.Inject
 
@@ -26,35 +27,10 @@ class MainActivity
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        /*val ctx = applicationContext
-        Configuration.getInstance().load(ctx, PreferenceManager.getDefaultSharedPreferences(ctx))*/
-
-        navController = Navigation.findNavController(this, R.id.nav_host_fragment)
-
-        /*setContentView(R.layout.activity_main)
-
-        map.setTileSource(TileSourceFactory.MAPNIK)
-
-        map.setMultiTouchControls(true)
-        val mapController = map.controller
-        mapController.setZoom(9.5)
-        val startPoint = GeoPoint(48.8583, 2.2944)
-        mapController.setCenter(startPoint)*/
-        val button : Button = findViewById(R.id.buttonGo)
-button.setOnClickListener(this::GoClick)
+        setContentView(R.layout.activity_main)
+        //navController = Navigation.findNavController(this, R.id.nav_host_fragment)
     }
 
-    fun GoClick(view: View) {
-        navController?.navigate(R.id.mapFragment)
-    }
 
-    override fun onResume() {
-        super.onResume()
-        map.onResume()
-    }
 
-    override fun onPause() {
-        super.onPause()
-        map.onPause()
-    }
 }

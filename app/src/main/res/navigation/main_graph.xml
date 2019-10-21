@@ -8,7 +8,11 @@
     <fragment
             android:id="@+id/firstScreenFragment"
             android:name="bav.anyway.FirstScreenFragment"
-            android:label="FirstScreenFragment" />
+            android:label="FirstScreenFragment" >
+        <action
+                android:id="@+id/action_firstScreenFragment_to_mapFragment"
+                app:destination="@id/mapFragment" />
+    </fragment>
     <fragment
             android:id="@+id/mapFragment"
             android:name="bav.anyway.MapFragment"
