@@ -7,10 +7,8 @@
         android:layout_height="match_parent"
         tools:context=".FirstScreenFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-
-    <TextView
-            android:id="@+id/RequestTextView"
+    <EditText
+            android:id="@+id/requestTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="150dp"
@@ -31,6 +29,7 @@
             android:clickable="true"
             android:text="Go"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/RequestTextView" />
+            app:layout_constraintTop_toBottomOf="@+id/requestTextView" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
