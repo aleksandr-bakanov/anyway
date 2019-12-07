@@ -7,7 +7,7 @@
 
     <fragment
             android:id="@+id/firstScreenFragment"
-            android:name="bav.anyway.FirstScreenFragment"
+            android:name="bav.anyway.screens.main.FirstScreenFragment"
             android:label="FirstScreenFragment" >
         <action
                 android:id="@+id/action_firstScreenFragment_to_mapFragment"
@@ -15,7 +15,7 @@
     </fragment>
     <fragment
             android:id="@+id/mapFragment"
-            android:name="bav.anyway.MapFragment"
+            android:name="bav.anyway.screens.map.MapFragment"
             android:label="MapFragment"
             tools:layout="@layout/fragment_map" />
 </navigation>

@@ -2,7 +2,7 @@ package bav.anyway.di
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
-import bav.anyway.MainViewModel
+import bav.anyway.screens.main.MainViewModel
 import dagger.Binds
 import dagger.MapKey
 import dagger.Module

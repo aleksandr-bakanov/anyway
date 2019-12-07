@@ -1,6 +1,7 @@
-package bav.anyway
+package bav.anyway.screens.main
 
 import android.os.Bundle
+import bav.anyway.R
 import dagger.android.support.DaggerAppCompatActivity
 import javax.inject.Inject
 

@@ -2,6 +2,7 @@ package bav.anyway.di
 
 import android.app.Application
 import bav.anyway.AnywayApplication
+import bav.anyway.api.ApiModule
 import dagger.BindsInstance
 import dagger.Component
 import dagger.android.AndroidInjectionModule
@@ -13,7 +14,8 @@ import javax.inject.Singleton
 @Component(modules = [
     AndroidInjectionModule::class,
     ViewModelModule::class,
-    ScreenBindingModule::class
+    ScreenBindingModule::class,
+    ApiModule::class
 ])
 interface AppComponent: AndroidInjector<DaggerApplication> {
     fun inject(app: AnywayApplication)
